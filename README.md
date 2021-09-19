@@ -10,6 +10,16 @@ It relies on the [conventional commit format](https://conventionalcommits.org/li
 
 **IMPORTANT** If you do not follow this convention, the package may fail to be published as the semantic-release won't detect relevant updates.
 
+> From the semantic-release docs:
+
+The table below shows which commit message gets you which release type when semantic-release runs (using the default configuration):
+
+Commit message | Release type
+--- | ---
+fix(pencil): stop graphite breaking when too much pressure applied |	Patch Release
+feat(pencil): add 'graphiteWidth' option | Feature Release
+perf(pencil): remove graphiteWidth option<br/><br/>BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reasons. | Breaking Release
+
 When publishing the new version, the package.lock will automatically be updated as well with the new version, but as this requires a new commit to master, that is done by the `semantic-release-bot`. For this to work correctly, do not restrict push permissions on the `main` branch.
 
 Finally, for this bot to be able to push to the repository, a Github Authentication token (repo) is needed. One was generated in the projetos-niaefeup account. Whichever account generates this, must have access to the repository, obviously.

@@ -1,0 +1,28 @@
+{
+  "name": "@niaefeup/nijobs-commons",
+  "publishConfig": {
+      "access": "public"
+  },
+  "version": "0.1.0",
+  "description": "Shared code for NIJobs services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NIAEFEUP/nijobs-commons.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NIAEFEUP/nijobs-commons/issues"
+  },
+  "homepage": "https://github.com/NIAEFEUP/nijobs-commons#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@semantic-release/git": "^9.0.1",
+    "semantic-release": "^18.0.0"
+  }
+}

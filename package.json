@@ -5,10 +5,16 @@
   },
   "version": "1.0.1",
   "description": "Shared code for NIJobs services",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "start": "babel-node index.js",
+    "build": "BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NIAEFEUP/nijobs-commons.git"
@@ -20,9 +26,14 @@
   },
   "homepage": "https://github.com/NIAEFEUP/nijobs-commons#readme",
   "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@semantic-release/git": "^9.0.1",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "semantic-release": "^18.0.0"
   }
 }

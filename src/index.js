@@ -1,3 +1,1 @@
-export const ping = () => console.log("pong")
-export const pong = () => console.log("ping??")
-
+export {default as Offer} from "./Offer.js";

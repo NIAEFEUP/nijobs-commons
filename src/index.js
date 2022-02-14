@@ -4,3 +4,4 @@ export {default as Account} from "./Account.js";
 export {default as CompanyApplication} from "./CompanyApplication.js";
 export {default as TechnologyTypes} from "./TechnologyTypes.js";
 export {default as JobTypes} from "./JobTypes.js";
+export {default as FieldTypes} from "./FieldTypes.js";

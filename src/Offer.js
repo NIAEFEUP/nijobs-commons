@@ -12,3 +12,10 @@ export default Object.freeze({
         COMPANY_DISABLED: "COMPANY_DISABLED",
     },
 });
+
+export const validApplyURL = (val) => {
+    const httpRegex = /^https?:\/\/\S+\.\S+$/;
+    const emailRegex = /^mailto:(\S+@\S+)$/;
+
+    return httpRegex.test(val) || emailRegex.test(val);
+};

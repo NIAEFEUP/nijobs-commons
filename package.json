@@ -4,7 +4,7 @@
     "access": "public"
   },
   "version": "1.12.1",
-  "types": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "description": "Shared code for NIJobs services",
   "main": "./lib/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "dist/"
   ],
   "repository": {
     "type": "git",

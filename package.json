@@ -4,6 +4,7 @@
     "access": "public"
   },
   "version": "1.12.0",
+  "types": "./dist/index.js",
   "description": "Shared code for NIJobs services",
   "main": "./lib/index.js",
   "scripts": {
